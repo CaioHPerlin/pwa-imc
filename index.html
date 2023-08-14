@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imc.js</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/nutricionista-icon-256.png">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@600&display=swap');</style>
+    <title>nutrIMC</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <main>
-        <h1>Imc.js</h1>
-        <form id="calc">
+<body class="full">
+    <main class="content">
+        <h1>Nutricionista - IMC</h1>
+        <form id="calc" class="formzin">
             <label for="in-name">Nome</label>
             <input required type="text" id="in-name" name="name">
             <label for="in-age">Idade</label>
             <input required type="number" id="in-age" name="age">
+            <div class="sex">
             <label>Sexo</label>
             <input required type="radio" id="masc" name="in-sex" value="masc">
             <label for="masc">M</label>
             <input required type="radio" id="fem" name="in-sex" value="fem">
             <label for="fem">F</label>
+        </div>
             <label for="in-height">Altura</label>
             <input required type="number" id="in-height" name="height">
             <label for="in-weight">Peso</label>
             <input required type="number" id="in-weight" name="weight">
 
-            <input type="submit" value="Calcular">
+            <input type="submit" class="btn" value="Calcular">
         </form>
     </main>
     <div>
