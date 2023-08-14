@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imc.js</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Imc.js</h1>
+        <form id="calc">
+            <label for="in-name">Nome</label>
+            <input required type="text" id="in-name" name="name">
+            <label for="in-age">Idade</label>
+            <input required type="number" id="in-age" name="age">
+            <label>Sexo</label>
+            <input required type="radio" id="masc" name="in-sex" value="masc">
+            <label for="masc">M</label>
+            <input required type="radio" id="fem" name="in-sex" value="fem">
+            <label for="fem">F</label>
+            <label for="in-height">Altura</label>
+            <input required type="number" id="in-height" name="height">
+            <label for="in-weight">Peso</label>
+            <input required type="number" id="in-weight" name="weight">
+
+            <input type="submit" value="Calcular">
+        </form>
+    </main>
+    <div>
+        <h2 id="out-name"></h2>
+        <h3 id="out-imc">Excesso de Peso</h3>
+        <h3>Imc: <span id="out-imc">25</span></h3>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
