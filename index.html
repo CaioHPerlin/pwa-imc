@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="apple-touch-icon" href="images/nutricionista-icon-256.png">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@600&display=swap');</style>
     <title>nutrIMC</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="full">
+
+<body>
     <main class="content">
         <form id="calc" class="formzin">
-            <label for="in-name" class="placeholder">Nome</label>       
+            <label for="in-name" class="placeholder">Nome</label>
             <input required type="text" id="in-name" name="name" class="input">
             <label for="in-age">Idade</label>
             <input required type="number" id="in-age" name="age" class="input">
             <div class="sex">
-            <label>Sexo</label>
-            <input required type="radio" id="masc" name="in-sex" value="masc">
-            <label for="masc">M</label>
-            <input required type="radio" id="fem" name="in-sex" value="fem">
-            <label for="fem">F</label>
-        </div>
+                <label>Sexo</label>
+                <input required type="radio" id="masc" name="in-sex" value="masc"><label for="masc">M</label>
+                <input required type="radio" id="fem" name="in-sex" value="fem"><label for="fem">F</label>
+            </div>
             <label for="in-height">Altura</label>
             <input required type="number" id="in-height" name="height" class="input" inputmode="numeric">
             <label for="in-weight">Peso</label>
@@ -38,4 +37,5 @@
     </div>
     <script src="/js/script.js"></script>
 </body>
+
 </html>
