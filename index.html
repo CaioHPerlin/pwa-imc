@@ -13,24 +13,24 @@
 <body>
     <main class="content">
         <form id="calc" class="formzin">
-            <label for="in-name" class="placeholder">Nome</label>
-            <input required type="text" id="in-name" name="name" class="input">
-            <label for="in-age">Idade</label>
-            <input required type="number" id="in-age" name="age" class="input">
+            <label for="name" class="placeholder">Nome</label>
+            <input required type="text" id="name" name="name" class="input">
+            <label for="age">Idade</label>
+            <input required type="number" id="age" name="age" class="input">
             <div class="sex">
                 <label>Sexo</label>
-                <input required type="radio" id="masc" name="in-sex" value="masc"><label for="masc">M</label>
-                <input required type="radio" id="fem" name="in-sex" value="fem"><label for="fem">F</label>
+                <input required type="radio" id="masc" name="sex" value="masc"><label for="masc">M</label>
+                <input required type="radio" id="fem" name="sex" value="fem"><label for="fem">F</label>
             </div>
-            <label for="in-height">Altura</label>
-            <input required type="number" id="in-height" name="height" class="input" inputmode="numeric">
-            <label for="in-weight">Peso</label>
-            <input required type="number" id="in-weight" name="weight" class="input" inputmode="numeric">
+            <label for="height">Altura (cm)</label>
+            <input required type="number" id="height" name="height" placeholder="Ex: 160" class="input" inputmode="numeric">
+            <label for="weight">Peso (kg)</label>
+            <input required type="number" id="weight" name="weight" placeholder="Ex: 80" class="input" inputmode="numeric">
 
             <input type="submit" class="btn" value="Calcular">
         </form>
     </main>
-    <div class="result">
+    <div class="output">
         <h2 id="out-name"></h2>
         <h3 id="out-result">Excesso de Peso</h3>
         <h3>Imc: <span id="out-imc">25</span></h3>

@@ -2,27 +2,27 @@
 
 body{
     margin: 0;
-    padding: 0;
+    padding: 20px;
     font-family: 'Amiko', sans-serif;
     width: 100vw;
-    height: 100vh;
     color: black;
     background-color: #f7edf2;
     display: grid;
-    align-items: center;
+    align-items: start;
     justify-items: center;
 }
 
 .content{
-    height: 350px;
-    width: 500px;
+    padding: 30px;
     background-color: #f5eff5;
     border-radius: 15px;
     border: 3px solid black;
     box-shadow: 15px 15px 1px #ccb3cc, 15px 15px 1px 3px rgba(0,0,0,1);
 }
 
-.result{
+.output{
+    margin-top: 50px;
+    display: none;
     height: 150px;
     width: 300px;
     background-color: #e6dbf0;
@@ -40,7 +40,6 @@ form{
     display: grid;
     row-gap: 2px;
     margin: auto;
-    margin-top: 2.5em;
     width: 25em;
 }
 
@@ -74,4 +73,5 @@ input::-webkit-inner-spin-button {
     font-size: 15px;
     padding: 2px 10px 0;  
     transition: 0.5s;
+    margin-bottom: 5px;
 }
