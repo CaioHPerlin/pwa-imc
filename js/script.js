@@ -1,3 +1,10 @@
+window.onload = () => {
+    'use strict';
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js');
+    }
+}
+
 const form = document.getElementById('calc')
 const output = document.getElementsByClassName('output')[0]
 
@@ -17,5 +24,5 @@ form.addEventListener('submit', e => {
     if(imc < 39.9) result = 'Obesidade classe II'; else result = 'Obesidade classe III';
     document.getElementById('out-result').innerHTML = result;
 
-    output.style.display = "block"
+    output.style.display = 'block'
 });
